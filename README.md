@@ -3,3 +3,4 @@ Full-stack travel platform for Sahyadri Tour Company, with dynamic destination a
 Built some components and tested it on the local host environment before pushing it here and in production.
 Built API's and connected DB(MongoDB) and tested them locally before pushing it in production.
 Implemented the JWT Auth and DB configuration with Postman 
+Did the APIs and ADMIN auth with dedicated apis and Built Admin Dashboard UI
