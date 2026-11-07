@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 
@@ -5,20 +6,24 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative isolate min-h-[470px] overflow-hidden bg-[#E9E7D9] sm:min-h-[520px] lg:min-h-[540px]"
+      className="relative isolate min-h-117.5 overflow-hidden bg-[#E9E7D9] sm:min-h-130 lg:min-h-135"
     >
       {/* Scenic Sahyadri landscape */}
       <img
-        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85"
+        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=80"
         alt="Mountain ranges surrounded by clouds and greenery"
         fetchPriority="high"
+        loading="eager"
+        decoding="async"
+        width={2000}
+        height={1125}
         className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
       />
 
       {/* Soft overlay for readable text */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#FEFAF4]/95 via-[#FEFAF4]/75 to-[#FEFAF4]/10" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-[#FEFAF4]/95 via-[#FEFAF4]/75 to-[#FEFAF4]/10" />
 
-      <div className="mx-auto flex min-h-[470px] max-w-[1440px] items-center px-6 py-16 sm:min-h-[520px] sm:px-10 lg:min-h-[540px] lg:px-12">
+      <div className="mx-auto flex min-h-117.5 max-w-360 items-center px-6 py-16 sm:min-h-130 sm:px-10 lg:min-h-135 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,7 +50,7 @@ function Hero() {
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <a
               href="#packages"
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-[#4D5E2C] px-5 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-[#2E3D24] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5D7141]"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-[#4D5E2C] px-5 py-3 text-sm font-medium text-white/90! transition-colors duration-200 hover:bg-[#2E3D24] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#5D7141]"
             >
               Explore Packages
             </a>

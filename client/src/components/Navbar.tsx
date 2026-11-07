@@ -16,7 +16,7 @@ function MountainLogo() {
       viewBox="0 0 110 52"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-[84px] shrink-0 sm:h-12 sm:w-[100px]"
+      className="h-10 w-21 shrink-0 sm:h-12 sm:w-25"
       aria-hidden="true"
     >
       <path
@@ -51,7 +51,7 @@ function Navbar() {
 
   return (
     <header className="relative z-50 border-b border-[#D8DDC7] bg-[#FEFAF4]">
-      <div className="mx-auto flex min-h-[76px] max-w-[1440px] items-center justify-between gap-4 px-5 sm:px-8 lg:px-12">
+      <div className="mx-auto flex min-h-19 max-w-360 items-center justify-between gap-4 px-5 sm:px-8 lg:px-12">
         {/* Brand */}
         <a
           href="#home"
@@ -90,10 +90,10 @@ function Navbar() {
         {/* Desktop booking button */}
         <a
           href="#contact"
-          className="hidden shrink-0 items-center gap-2 rounded-xl bg-[#4D5E2C] px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-[#2E3D24] xl:inline-flex"
+          className="hidden shrink-0 items-center gap-2 rounded-xl bg-[#4D5E2C] px-5 py-3 text-sm font-semibold tracking-wide text-white/90! shadow-sm transition-colors hover:bg-[#2E3D24] xl:inline-flex"
         >
           Book Now
-          <ArrowRight size={16} aria-hidden="true" />
+          <ArrowRight size={16} aria-hidden="true" className="text-white/90!"/>
         </a>
 
         {/* Mobile menu toggle */}
@@ -116,7 +116,7 @@ function Navbar() {
           aria-label="Mobile navigation"
           className="border-t border-[#D8DDC7] bg-[#FEFAF4] px-5 py-4 shadow-md xl:hidden"
         >
-          <div className="mx-auto flex max-w-[1440px] flex-col gap-1">
+          <div className="mx-auto flex max-w-360 flex-col gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -131,7 +131,7 @@ function Navbar() {
             <a
               href="#contact"
               onClick={closeMenu}
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-[#4D5E2C] px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-[#2E3D24]"
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-[#4D5E2C] px-5 py-3 text-sm font-semibold tracking-wide text-white shadow-sm transition-colors hover:bg-[#2E3D24]"
             >
               Book Now
               <ArrowRight size={16} aria-hidden="true" />
