@@ -1,0 +1,13 @@
+
+{
+  "rewrites": [
+    {
+      "source": "/api",
+      "destination": "https://sahyadri-tour-company-api.onrender.com/api"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://sahyadri-tour-company-api.onrender.com/api/:path*"
+    }
+  ]
+}
