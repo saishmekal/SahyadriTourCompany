@@ -334,7 +334,7 @@ The Render free service may take some time to respond after periods of inactivit
 BE Computer Engineering | Full-Stack Developer
 
 - GitHub: https://github.com/saishmekal
-- LinkedIn: *Add your LinkedIn profile URL*
+- LinkedIn: https://www.linkedin.com/in/saish-mekal-64499b253/
 
 ---
 
